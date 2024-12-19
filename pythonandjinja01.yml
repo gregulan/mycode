@@ -1,4 +1,4 @@
----
+
 - name: A Play to play with Python
   hosts: localhost
 
@@ -70,4 +70,6 @@
   - name: Pop the number 50 on the screen
     debug:
       msg: "{{ (myaddresses|ansible.utils.ipaddr('10.0.0.0/8'))[0].split('.')[3] }}"
+
+
 
